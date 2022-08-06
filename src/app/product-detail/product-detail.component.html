@@ -1,0 +1,9 @@
+<div *ngIf="phone">
+    <h2>{{ phone.name }}</h2>
+    <p>{{ phone.price | currency: "฿" }}</p>
+
+    <button mat-raised-button color="primary"
+        (click)="addToCart(phone)">
+        <mat-icon>add_shopping_cart</mat-icon> Add to cart
+    </button>
+</div>

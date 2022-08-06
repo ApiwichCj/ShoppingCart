@@ -1,0 +1,20 @@
+<p *ngFor= "let i of items">
+    
+    {{ i.name }}
+    <span matBadge= {{i.quanity}} matBadgeOverlap="false"></span>
+
+    <button mat-raised-button color="primary"  style="float:right;"
+        (click)="deleteItem(i)">
+        <mat-icon>delete</mat-icon> Delete 
+    </button>
+      
+</p>
+<span>Total : {{ total }}</span>
+<br>
+<span>Amount : {{ amount }} </span>
+
+<button mat-raised-button color="primary" style="float:right;"
+        (click)="clearCart()">
+        <mat-icon>delete</mat-icon> Clear Order
+</button>
+
